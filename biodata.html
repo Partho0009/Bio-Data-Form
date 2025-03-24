@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Set background image for the webpage */
+body {
+  background-image: url('partho1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+/* Style the form container */
+div {
+  border-radius: 10px;
+  background-image: url('your-form-bg.jpg'); /* Set form background */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  width: 400px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+/* Input fields styling */
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Submit button styling */
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Heading Style */
+h3 {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h3>MY BIO DATA</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="dob">Date Of Birth</label>
+    <input type="text" id="dob" name="date of birth" placeholder="Your date of birth">
+
+    <label for="cname">Country</label>
+    <input type="text" id="cname" name="countryname" placeholder="Your country name">
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phonenumber" placeholder="Your phone number">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email name" placeholder="Your email">
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
